@@ -1,0 +1,4 @@
+*.swp
+server/itp.sqlite
+env/*
+.DS_Store

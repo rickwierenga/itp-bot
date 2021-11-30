@@ -1,0 +1,17 @@
+{
+  "name": "ITP Bot",
+  "version": "0.0.1",
+  "manifest_version": 2,
+  "description": "This extension was created with the awesome extensionizr.com",
+  "homepage_url": "http://extensionizr.com",
+  "default_locale": "en",
+  "content_scripts": [
+    {
+      "matches": ["https://stepik.org/*"],
+      "js": ["inject.js"],
+      "run_at": "document_end"
+    }
+  ],
+  "permissions": ["activeTab", "https://stepik.org/*"],
+  "web_accessible_resources" : ["main.js"]
+}
